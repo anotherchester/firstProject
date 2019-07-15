@@ -4,7 +4,7 @@
     <list default="true" id="99148ef9-5094-4dcb-87e7-268824dd1959" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wagwalking/page/PromotionWFPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wagwalking/page/PromotionWFPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wagwalking/WalkFreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wagwalking/WalkFreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wagwalking/RequirementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wagwalking/RequirementsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/wagwalking/RequirementsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="428">
+              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wagwalking/page/PromotionWFPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
-              <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,7 +101,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1346" />
@@ -308,12 +308,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testFirst - 2019.07.10 at 20h 45m 51s.xml">
-      <configuration name="FirstTest.testFirst" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SecondTest_testSecond - 2019.07.10 at 21h 21m 59s.xml">
-      <configuration name="SecondTest.testSecond" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SecondTest_testSecond - 2019.07.10 at 21h 29m 24s.xml">
       <configuration name="SecondTest.testSecond" configurationId="JUnit" />
     </history-entry>
@@ -336,6 +330,12 @@
       <configuration name="RequirementsTest.testRequirements" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RequirementsTest_testRequirements - 2019.07.14 at 21h 17m 48s.xml">
+      <configuration name="RequirementsTest.testRequirements" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RequirementsTest_testRequirements - 2019.07.14 at 21h 39m 14s.xml">
+      <configuration name="RequirementsTest.testRequirements" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RequirementsTest_testRequirements - 2019.07.14 at 21h 57m 30s.xml">
       <configuration name="RequirementsTest.testRequirements" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -477,7 +477,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wagwalking/page/PromotionWFPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
-          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -486,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/wagwalking/RequirementsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="428">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

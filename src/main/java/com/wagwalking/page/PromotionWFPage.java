@@ -79,7 +79,27 @@ public class PromotionWFPage extends BasePage {
         phonefield.click();
     }
 
-    public String getRequiredField() {
+    public String getRequiredMailField() {
+
+        return requiredfield.getText();
+    }
+
+    public String getRequiredPassField() {
+
+        return requiredfield.getText();
+    }
+
+    public String getRequiredFirstnameField() {
+
+        return requiredfield.getText();
+    }
+
+    public String getRequiredLastnameField() {
+
+        return requiredfield.getText();
+    }
+
+    public String getRequiredPhoneField() {
 
         return requiredfield.getText();
     }

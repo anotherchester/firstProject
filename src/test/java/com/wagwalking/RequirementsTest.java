@@ -18,12 +18,21 @@ public class RequirementsTest extends BaseTest {
 
         promoPage.clickEmailField();
         promoPage.clickPassField();
-   //     promoPage.clickFirstNameField();
-   //     promoPage.clickLastNameField();
-   //     promoPage.clickPhoneField();
-
-        String mailNote = promoPage.getRequiredField();
+        String mailNote = promoPage.getRequiredMailField()  ;
         Assert.assertEquals("required",mailNote);
+        promoPage.clickFirstNameField();
+        String passNote = promoPage.getRequiredPassField();
+        Assert.assertEquals("required",passNote);
+        promoPage.clickLastNameField();
+        String firstnameNote = promoPage.getRequiredFirstnameField();
+        Assert.assertEquals("required",firstnameNote);
+        promoPage.clickPhoneField();
+        String lastnameNote = promoPage.getRequiredLastnameField();
+        Assert.assertEquals("required",lastnameNote);
+        promoPage.clickPassField();
+        String phoneNote = promoPage.getRequiredPhoneField();
+        Assert.assertEquals("required",phoneNote);
+
 
 
 
