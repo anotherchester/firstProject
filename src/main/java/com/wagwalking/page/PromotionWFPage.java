@@ -12,19 +12,22 @@ public class PromotionWFPage extends BasePage {
     }
 
     @FindBy(css = "input[type=email]")
-    WebElement emailfield;
+    private WebElement emailfield;
 
     @FindBy(css = "input[type=password]")
-    WebElement passfield;
+    private WebElement passfield;
 
     @FindBy(css = "input[data-testid=register-first-name]")
-    WebElement firstnamefield;
+    private WebElement firstnamefield;
 
     @FindBy(css = "input[data-testid=register-last-name]")
-    WebElement lastnamefield;
+    private WebElement lastnamefield;
 
     @FindBy(css = "input[type=tel]")
-    WebElement phonefield;
+    private WebElement phonefield;
+
+    @FindBy(css = ".sc-bdVaJa.sc-iwsKbI.kOShw")
+    private WebElement requiredfield;
 
     public void inputEmail (String email) {
 
@@ -50,4 +53,36 @@ public class PromotionWFPage extends BasePage {
 
         phonefield.sendKeys(phone);
     }
+
+    public void clickEmailField () {
+
+        emailfield.click();
+    }
+
+    public void clickPassField() {
+
+        passfield.click();
+    }
+
+    public void clickFirstNameField() {
+
+        firstnamefield.click();
+    }
+
+    public void clickLastNameField() {
+
+        lastnamefield.click();
+    }
+
+    public void clickPhoneField() {
+
+        phonefield.click();
+    }
+
+    public String getRequiredField() {
+
+        return requiredfield.getText();
+    }
+
+
 }

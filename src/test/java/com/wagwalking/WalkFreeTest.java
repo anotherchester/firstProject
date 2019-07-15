@@ -7,26 +7,26 @@ import org.junit.Test;
 public class WalkFreeTest extends BaseTest {
 
     private HomePage homePage;
-    private PromotionWFPage promo;
+    private PromotionWFPage promoPage;
 
     @Test
     public void testWalkFree() {
 
         homePage = new HomePage(driver);
 
-        promo = homePage.clickWalkFreeButton();
+        promoPage = homePage.clickWalkFreeButton();
 
-        promo = new PromotionWFPage(driver);
+        promoPage = new PromotionWFPage(driver);
 
-        promo.inputEmail("umbasa@cinder.com");
+        promoPage.inputEmail("umbasa@cinder.com");
 
-        promo.inputPass("qwerty123");
+        promoPage.inputPass("qwerty123");
 
-        promo.inputFirstName("Lord");
+        promoPage.inputFirstName("Lord");
 
-        promo.inputLastName("Sorrow");
+        promoPage.inputLastName("Sorrow");
 
-        promo.inputPhone("0001133");
+        promoPage.inputPhone("0001133");
 
     }
 }
