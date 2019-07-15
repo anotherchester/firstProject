@@ -55,4 +55,7 @@ public class BaseTest {
         System.out.println("Finish");
        // driver.quit();
     }
+
+    //Code have been added
+
 }
