@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class PromotionWFPage extends BasePage {
 
     public PromotionWFPage(WebDriver driver) {
@@ -27,7 +29,17 @@ public class PromotionWFPage extends BasePage {
     private WebElement phonefield;
 
     @FindBy(css = ".sc-bdVaJa.sc-iwsKbI.kOShw")
-    private WebElement requiredfield;
+    private List<WebElement> requiredfields;
+
+    @FindBy(css = ".sc-gzVnrw.fzplxK")
+    private List<WebElement> passfields;
+
+    @FindBy(css = ".sc-htoDjs.hdXrdX")
+    private WebElement nextfield;
+
+    @FindBy(css = ".sc-bdVaJa.sc-iwsKbI.kOShw")
+    private WebElement existMailField;
+
 
     public void inputEmail (String email) {
 
@@ -79,29 +91,50 @@ public class PromotionWFPage extends BasePage {
         phonefield.click();
     }
 
+    public void clickNextButton() {
+
+        nextfield.click();
+    }
+
     public String getRequiredMailField() {
 
-        return requiredfield.getText();
+        return requiredfields.get(0).getText();
     }
 
-    public String getRequiredPassField() {
-
-        return requiredfield.getText();
-    }
 
     public String getRequiredFirstnameField() {
 
-        return requiredfield.getText();
+        return requiredfields.get(1).getText();
     }
 
     public String getRequiredLastnameField() {
 
-        return requiredfield.getText();
+        return requiredfields.get(2).getText();
     }
 
     public String getRequiredPhoneField() {
 
-        return requiredfield.getText();
+        return requiredfields.get(3).getText();
+    }
+
+    public String getExistMailField() {
+
+        return existMailField.getText();
+    }
+
+    public String getPassField1() {
+
+        return passfields.get(0).getText();
+    }
+
+    public String getPassField2() {
+
+        return passfields.get(1).getText();
+    }
+
+    public String getPassField3() {
+
+        return passfields.get(2).getText();
     }
 
 
