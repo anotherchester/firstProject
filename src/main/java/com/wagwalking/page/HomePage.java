@@ -14,11 +14,21 @@ public class HomePage extends BasePage {
     @FindBy(css = ".sc-ifAKCX.bCMkWd")
     WebElement walkfreebutton;
 
+    @FindBy(css = ".sc-ifAKCX.jlgKgQ")
+    WebElement becomebutton;
+
     public PromotionWFPage clickWalkFreeButton() {
 
         walkfreebutton.click();
 
         return new PromotionWFPage(driver);
+    }
+
+    public BecomePage clickBecomeButton() {
+
+        becomebutton.click();
+
+        return new BecomePage(driver);
     }
 
 
