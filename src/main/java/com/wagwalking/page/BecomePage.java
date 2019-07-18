@@ -12,11 +12,17 @@ public class BecomePage extends BasePage {
         super(driver);
     }
 
-    @FindBy(css = ".btn.form-components-loader-button.none.become-walker-application__btn.btn.btn-brand.btn--brand-color")
+    @FindBy(css = ".button-text")
     WebElement applyButton;
 
     @FindBy(css = ".error-message-container")
     private List<WebElement> errorfields;
+
+    @FindBy(css = ".form-utils-input")
+    private List<WebElement> applicationfields;
+
+    @FindBy(css = ".autocomplete-result")
+    private List<WebElement> addressResults;
 
     public void clickApplyButton() {
 
@@ -41,6 +47,49 @@ public class BecomePage extends BasePage {
     public String getPhoneErrTxt() {
 
         return errorfields.get(3).getText();
+    }
+
+    public void clickFirstNameField() {
+
+        applicationfields.get(0).click();
+    }
+
+    public void inputFirstname(String firstname) {
+
+        applicationfields.get(0).sendKeys(firstname);
+    }
+
+    public void inputLastname(String lastname) {
+
+        applicationfields.get(1).sendKeys(lastname);
+    }
+
+    public void inputEmail (String email) {
+
+        applicationfields.get(2).sendKeys(email);
+    }
+
+    public void inputPhone (String phone) {
+
+        applicationfields.get(3).sendKeys(phone);
+    }
+
+    public void inputAddress(String address) {
+        applicationfields.get(4).sendKeys(address);
+        addressResults.get(0).click();
+    }
+
+    public void inputApt(String apt) {
+
+        applicationfields.get(5).sendKeys(apt);
+    }
+
+    public void inputCity (String city)
+    { applicationfields.get(6).sendKeys(city);}
+
+    public void inputZip (String zip) {
+
+        applicationfields.get(7).sendKeys(zip);
     }
 
 
