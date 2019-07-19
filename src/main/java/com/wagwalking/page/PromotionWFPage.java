@@ -40,6 +40,9 @@ public class PromotionWFPage extends BasePage {
     @FindBy(css = ".sc-bdVaJa.sc-iwsKbI.kOShw")
     private WebElement existMailField;
 
+    @FindBy(css = ".sc-bdVaJa.sc-iwsKbI.kOShw")
+    private WebElement invalidMailField;
+
 
     public void inputEmail (String email) {
 
@@ -135,6 +138,11 @@ public class PromotionWFPage extends BasePage {
     public String getPassField3() {
 
         return passfields.get(2).getText();
+    }
+
+    public String getInvalidMailText() {
+
+        return invalidMailField.getText();
     }
 
 
