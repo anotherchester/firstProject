@@ -43,6 +43,34 @@ public class PromotionWFPage extends BasePage {
     @FindBy(css = ".sc-bdVaJa.sc-iwsKbI.kOShw")
     private WebElement invalidMailField;
 
+        public String getMailValue() {
+
+       String emailValue = emailfield.getAttribute("value");
+        return emailValue;}
+
+        public String getPassValue() {
+
+            String passValue = passfield.getAttribute("value");
+            return passValue;
+            }
+        public String getFirstNameValue() {
+
+            String firstNameValue = firstnamefield.getAttribute("value");
+            return firstNameValue;
+    }
+
+        public String getlastNameValue() {
+
+            String lastNameValue = lastnamefield.getAttribute("value");
+            return lastNameValue;
+        }
+
+        public String getPhoneValue() {
+
+        String phoneValue = phonefield.getAttribute("value");
+        return phoneValue;}
+
+
 
     public void inputEmail (String email) {
 

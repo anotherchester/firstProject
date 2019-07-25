@@ -17,7 +17,7 @@ public class BaseTest {
     @Before
     public void setup() {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\CatKomp\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\ProgramData\\chocolatey\\lib\\chromedriver\\tools\\chromedriver.exe");
 
         driver = new ChromeDriver();
 
@@ -50,7 +50,7 @@ public class BaseTest {
     }
 
     @After
-    public void quid() {
+    public void quit() {
 
         System.out.println("Finish");
        // driver.quit();
